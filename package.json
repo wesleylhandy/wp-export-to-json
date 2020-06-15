@@ -1,0 +1,30 @@
+{
+  "name": "wp-import",
+  "version": "0.0.1",
+  "description": "For importing WP posts and converting to JSON",
+  "main": "index.js",
+  "author": "Wesley L. Handy <wesley@wearecreativ.media>",
+  "license": "MIT",
+  "dependencies": {
+    "wpapi": "^1.2.1",
+    "semver": "^7.3.2"
+  },
+  "scripts": {
+    "lint": "eslint . --ext js,jsx",
+    "format": "eslint . --ext js,jsx --fix",
+    "postinstall": "yarn requirements-check --scripts-prepend-node-path",
+    "requirements-check": "node check_node_version",
+    "start": "node index"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=12.7.0"
+  }
+}

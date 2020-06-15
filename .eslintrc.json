@@ -1,0 +1,39 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "google",
+        "eslint:recommended",
+        "plugin:node/recommended",
+        "prettier"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        "quotes": ["error", "backtick"],
+        "require-jsdoc": 0,
+        "valid-jsdoc": 2,
+        "no-invalid-this": 0,
+        "no-unused-vars": 1,
+        "no-undefined": 1,
+        "no-inner-declarations": 0,
+        "consistent-return": ["error"],
+        "node/exports-style": ["error", "module.exports"],
+        "node/prefer-global/url": ["error", "always"],
+        "node/prefer-global/url-search-params": ["error", "always"],
+        "node/no-missing-require": "error"
+    }
+}
